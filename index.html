@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container {
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Buscador de Canciones</h1>
+        <form>
+            <!--Artista-->
+            <div class="form-group">
+                <label for="artista">
+                    Ingresa El Artista:
+                </label>
+                <input type="text" id="artista" name="artista" class="form-control" placeholder="Escribe tu dato">
+            </div>
+            <!--Cancion-->
+            <div class="form-group">
+                <label for="cancion">
+                    Ingresa el Nombrede la Cancion:
+                </label>
+                <input type="text" id="cancion" name="cancion" class="form-control" placeholder="Escribe tu dato">
+            </div>
+
+            <!--Botones-->
+            <div class="form-group">
+                <input type="submit" value="Buscar" id="btn_buscar" class="btn btn-primary">
+            </div>
+        </form>
+        <div class="card">
+            <div class="card-body" id="salida"></div>
+        </div>
+    </div>
+    <script src="js/buscador.js"></script>
+</body>
+
+</html>
